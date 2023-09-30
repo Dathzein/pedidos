@@ -27,7 +27,10 @@ class OrderController extends Controller
 
         $result = $data_customer->toArray();
 
-        return response()->json($result);
+        return response()->json([
+            'message'=> 'Proceso exitoso',
+            'Lista' => $result
+        ]);
 
     }
 }
