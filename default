@@ -4,9 +4,9 @@ server {
     listen 8080;
     listen [::]:8080;
     root /home/site/wwwroot/public; # Changed for Laravel
-    index  index.php index.html index.htm;
-    server_name  pedidos-pruebas pedidos-pruebas.azurewebsites.net/;
-    port_in_redirect off;
+    # index  index.php index.html index.htm;
+    # server_name  pedidos-pruebas pedidos-pruebas.azurewebsites.net/;
+    # port_in_redirect off;
 
     location / {
         index  index.php index.html index.htm hostingstart.html;
